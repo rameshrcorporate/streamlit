@@ -6,9 +6,11 @@ import seaborn as sns
 
 @st.cache_data
 def load_data():
-   FILE_ID = "14BGFfbaTbEaLLA0clc38D80G3u2h3_I9"
-   sheet_url=f"https://docs.google.com/spreadsheets/d/14BGFfbaTbEaLLA0clc38D80G3u2h3_I9/edit?usp=sharing&ouid=102922787133006376133&rtpof=true&sd=true"
-   return pd.read_excel("Synthetic_Dataset_Activity.xlsx")
+    SHEET_URL = "https://docs.google.com/spreadsheets/d/1dnVvrZO1m-865ISJGnXCL9K0HijplSPF/export?format=csv"
+    return pd.read_csv(SHEET_URL)
+   #FILE_ID = "14BGFfbaTbEaLLA0clc38D80G3u2h3_I9"
+   #sheet_url=f"https://docs.google.com/spreadsheets/d/14BGFfbaTbEaLLA0clc38D80G3u2h3_I9/edit?usp=sharing&ouid=102922787133006376133&rtpof=true&sd=true"
+   #return pd.read_excel("Synthetic_Dataset_Activity.xlsx")
     
     
 
