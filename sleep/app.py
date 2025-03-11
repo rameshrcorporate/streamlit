@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
-import plotly as px
+# import plotly as px
+import plotly.express as px
 import numpy as np
 import seaborn
 
@@ -10,7 +11,8 @@ import seaborn
 
 @st.cache_data
 def load_data():
-    return pd.read_excel("Synthetic_Dataset_Sleep.xlsx")
+    SHEET_URL = "https://docs.google.com/spreadsheets/d/14BGFfbaTbEaLLA0clc38D80G3u2h3_I9/export?format=csv"
+    return pd.read_csv(SHEET_URL)
 
 df = load_data()  # Call the function to get the cached DataFrame
 
