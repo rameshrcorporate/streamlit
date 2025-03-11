@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
+import plotly as px
 import numpy as np
+import seaborn
 
 # Load Dataset
 # file_path = "Synthetic_Dataset_Sleep.xlsx"  # Ensure the file is in the same directory
